@@ -6,7 +6,6 @@ Hello,
 
 I am Victor, a guy who shares a great interest in economics and finance. At first glance, one can make a case that it may be difficult to completely understand the mathematics applied in these fields, although I can assure you it's even worse when you spend a great length of time on these matters. 
 
-So, why does someone decide to learn such things? Well, the answer becomes so much easier when one can see what he's actually doing while starts to use statistical tools to solve real problems in life. As an undergraduate student, I was intrigued by the first time I wrote a regression code on **R**. Since then, I've learned a lot about the **R** universe.  
+So, why does someone decide to learn such things? Well, the answer becomes so much easier when one can see what he's actually doing while starts to use statistical tools to solve real problems in life. As an undergraduate student, I was intrigued by the first time I wrote a regression code in **R**. Since then, I've learned a lot about the **R** universe.  
 
 You see, **R** has been a huge part of my professional life so far. So, I'd like to share my experience with you (as many others did to me).
-

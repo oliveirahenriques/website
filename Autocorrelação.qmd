@@ -1,0 +1,10 @@
+---
+title: "Autocorrelação"
+subtitle: 'Teoria, diagnóstico e tratamento'
+author: Víctor Henriques
+editor: visual
+---
+
+
+
+

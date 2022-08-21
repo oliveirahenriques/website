@@ -119,6 +119,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <link rel="stylesheet" href="styles.css">
+<meta name="twitter:title" content="Victor Henriques - About">
+<meta name="twitter:description" content="About this site">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-fixed">
@@ -135,11 +138,53 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html">Home</a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-data-science" role="button" data-bs-toggle="dropdown" aria-expanded="false">Data Science</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-data-science">    
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-estatística" role="button" data-bs-toggle="dropdown" aria-expanded="false">Estatística</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-estatística">    
+        <li class="dropdown-header">Estatística descritiva</li>
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Inferência estatística</li>
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Testes de hipóteses</li>
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-econometria" role="button" data-bs-toggle="dropdown" aria-expanded="false">Econometria</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-econometria">    
+        <li class="dropdown-header">Séries Temporais</li>
+        <li>
+    <a class="dropdown-item" href="./Autocorrelação.html">
+ <span class="dropdown-text">Autocorrelação</span></a>
   </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Risco</li>
+        <li>
+    <a class="dropdown-item" href="./Medidas de risco.html">
+ <span class="dropdown-text">Risco</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-finanças" role="button" data-bs-toggle="dropdown" aria-expanded="false">Finanças</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-finanças">    
+        <li>
+    <a class="dropdown-item" href="./CFA.html">
+ <span class="dropdown-text">CFA</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-gráfico-da-semana" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gráfico da semana</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-gráfico-da-semana">    
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page">About</a>
+    <a class="nav-link" href="./CV.pdf">CV</a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -282,6 +327,39 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright 2021, Víctor Henriques</div>   
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/oliveirahenriques">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/">
+      <i class="bi bi-instagram" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/victorhenriquesoliveira/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 

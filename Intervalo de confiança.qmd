@@ -1,0 +1,7 @@
+---
+title: "Intervalo de confiança"
+subtitle: "Teoria"
+editor: visual
+---
+
+

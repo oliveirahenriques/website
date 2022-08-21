@@ -1,0 +1,36 @@
+---
+title: "Risco"
+subtitle: "Definição, medidas e exemplos"
+author: 'Víctor Henriques'
+lang: pt  
+editor: visual
+---
+
+Definição (Risco):
+
+Definição (Medida de risco): Uma medida de risco para uma posição financeira com perda $L$ é um valor real que mede quanto $L$ é arriscado.
+
+*Value-at-Risk* (VaR) é uma medida
+
+Definição (VaR): Para uma perda $L$ com distribuição $F$, o VaR a um nível de confiança $\alpha \in (0,1)$ é definido por
+
+$$
+\begin{equation}
+\operatorname{VaR}_{\alpha}(L) = F_{L}^{-1} = \inf\{x \in \mathbb{R}: F_{L}(x) \geq \alpha\}
+\end{equation}
+$$ Em termos gerais, o VaR é simplesmente o $\alpha$-quantil da Função de Distribuição Acumulada $F_{L}$.
+
+```{r}
+# set.seed(1)
+# 
+# n = 100
+# 
+# normal <- rnorm(n = n, mean = 0, sd = 1)
+# 
+# pareto <- stats::rp
+# 
+# distributions <- c('normal','t-student','pareto')
+# 
+# 
+# lapply( function()
+```

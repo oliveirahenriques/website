@@ -1,16 +1,30 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Victor Henriques",
-    "section": "",
-    "text": "I am Victor, a guy who shares a great interest in economics and finance. At first glance, one can make a case that it may be difficult to completely understand the mathematics applied in these fields, although I can assure you it’s even worse when you spend a great length of time on these matters.\nSo, why does someone decide to learn such things? Well, the answer becomes so much easier when one can see what he’s actually doing while starts to use statistical tools to solve real problems in life. As an undergraduate student, I was intrigued by the first time I wrote a regression code on R. Since then, I’ve learned a lot about the R universe.\nYou see, R has been a huge part of my professional life so far. So, I’d like to share my experience with you (as many others did to me)."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Victor Henriques",
+    "section": "",
+    "text": "I am Victor, a guy who shares a great interest in economics and finance. At first glance, one can make a case that it may be difficult to completely understand the mathematics applied in these fields, although I can assure you it’s even worse when you spend a great length of time on these matters.\nSo, why does someone decide to learn such things? Well, the answer becomes so much easier when one can see what he’s actually doing while starts to use statistical tools to solve real problems in life. As an undergraduate student, I was intrigued by the first time I wrote a regression code in R. Since then, I’ve learned a lot about the R universe.\nYou see, R has been a huge part of my professional life so far. So, I’d like to share my experience with you (as many others did to me)."
+  },
+  {
+    "objectID": "Lei dos Grandes Números.html",
+    "href": "Lei dos Grandes Números.html",
+    "title": "Lei dos Grandes Números",
+    "section": "",
+    "text": "Teorema (WLLN):\nUsando uma definição mais precisa, a Lei Forte dos Grandes Números (SLLN), também conhecida por Kolmogorov’s Law,\nTeorema (SLLN): Seja \\(X_{1},\\dots,X_{n}\\) variáveis aleatórias i.i.d. com Função de Distribuição Acumulada \\(F\\).\n\n# ## Build blocks of data\n# m <- 500 # number of blocks (each of size n/m = 400)\n# X. <- split(X, f = rep(1:m, each = floor(n/m))) # split data into blocks\n# \n# ## Location-scale transform blocked sums via sqrt(n) * (bar{X}_n - mu) / sigma\n# ## = (S_n - n * mu) / (sqrt(n) * sigma)\n# stopifnot(th > 2) # for variance to exist\n# mu <- 1/(th-1) # true mean\n# sig2 <- 2/((th-2)*(th-1)^2) # true variance\n# Z <- sapply(X., function(x) (sum(x) - length(x) * mu) / (sqrt(length(x) * sig2))) # standardize by mean(<sum>) and sd(<sum>)\n# \n# ## Histogram with overlaid densities\n# dens <- density(Z)\n# hist(Z, probability = TRUE, ylim = c(0, max(dnorm(0), dens$y)), breaks = 20,\n#      main = substitute(bold(\"Central Limit Theorem for Par(\"*th.*\") data\"),\n#                        list(th. = th)), xlab = expression(\"Realizations of\"~sqrt(n)*(bar(X)[n]-mu)/sigma))\n# lines(dens, col = \"royalblue3\") # overlaid density estimate\n# curve(dnorm, from = min(Z), to = max(Z), add = TRUE, col = \"darkorange2\") # overlaid N(0,1) density\n# box()\n# legend(\"topright\", lty = c(1,1), col = c(\"royalblue3\", \"darkorange2\"), bty = \"n\",\n#        legend = c(\"Density estimate\", \"N(0,1) density\"))"
+  },
+  {
+    "objectID": "Medidas de risco.html",
+    "href": "Medidas de risco.html",
+    "title": "Risco",
+    "section": "",
+    "text": "Definição (Medida de risco): Uma medida de risco para uma posição financeira com perda \\(L\\) é um valor real que mede quanto \\(L\\) é arriscado.\nValue-at-Risk (VaR) é uma medida\nDefinição (VaR): Para uma perda \\(L\\) com distribuição \\(F\\), o VaR a um nível de confiança \\(\\alpha \\in (0,1)\\) é definido por\n\\[\n\\begin{equation}\n\\operatorname{VaR}_{\\alpha}(L) = F_{L}^{-1} = \\inf\\{x \\in \\mathbb{R}: F_{L}(x) \\geq \\alpha\\}\n\\end{equation}\n\\] Em termos gerais, o VaR é simplesmente o \\(\\alpha\\)-quantil da Função de Distribuição Acumulada \\(F_{L}\\).\n\n# set.seed(1)\n# \n# n = 100\n# \n# normal <- rnorm(n = n, mean = 0, sd = 1)\n# \n# pareto <- stats::rp\n# \n# distributions <- c('normal','t-student','pareto')\n# \n# \n# lapply( function()"
   }
 ]

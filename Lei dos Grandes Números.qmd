@@ -1,0 +1,39 @@
+---
+title: "Lei dos Grandes Números"
+subtitle: "Teoria, e simulações"
+author: '´Víctor Henriques'
+editor: visual
+---
+
+a Lei Fraca dos Grandes Números (SLLN), *Khinchin's Law*,
+
+Teorema (WLLN):
+
+Usando uma definição mais precisa, a Lei Forte dos Grandes Números (SLLN), também conhecida por *Kolmogorov's Law*,
+
+Teorema (SLLN): Seja $X_{1},\dots,X_{n}$ variáveis aleatórias i.i.d. com Função de Distribuição Acumulada $F$.
+
+```{r}
+# ## Build blocks of data
+# m <- 500 # number of blocks (each of size n/m = 400)
+# X. <- split(X, f = rep(1:m, each = floor(n/m))) # split data into blocks
+# 
+# ## Location-scale transform blocked sums via sqrt(n) * (bar{X}_n - mu) / sigma
+# ## = (S_n - n * mu) / (sqrt(n) * sigma)
+# stopifnot(th > 2) # for variance to exist
+# mu <- 1/(th-1) # true mean
+# sig2 <- 2/((th-2)*(th-1)^2) # true variance
+# Z <- sapply(X., function(x) (sum(x) - length(x) * mu) / (sqrt(length(x) * sig2))) # standardize by mean(<sum>) and sd(<sum>)
+# 
+# ## Histogram with overlaid densities
+# dens <- density(Z)
+# hist(Z, probability = TRUE, ylim = c(0, max(dnorm(0), dens$y)), breaks = 20,
+#      main = substitute(bold("Central Limit Theorem for Par("*th.*") data"),
+#                        list(th. = th)), xlab = expression("Realizations of"~sqrt(n)*(bar(X)[n]-mu)/sigma))
+# lines(dens, col = "royalblue3") # overlaid density estimate
+# curve(dnorm, from = min(Z), to = max(Z), add = TRUE, col = "darkorange2") # overlaid N(0,1) density
+# box()
+# legend("topright", lty = c(1,1), col = c("royalblue3", "darkorange2"), bty = "n",
+#        legend = c("Density estimate", "N(0,1) density"))
+
+```
